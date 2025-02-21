@@ -12,9 +12,9 @@ def load_config():
             return json.load(f)
     else:
         default_config = {
-            "TOKEN": os.getenv("BOT_TOKEN"),
-            "OWNER_ID": int(os.getenv("OWNER_ID", 123456789)),
-            "DATABASE_URL": os.getenv("DATABASE_URL"),
+            "TOKEN": os.getenv("7202524149:AAGcqCLLW79Aw_dAk3e5ayLkBI9kUW-76tQ"),
+            "OWNER_ID": int(os.getenv("OWNER_ID", 5787359348)),
+            "DATABASE_URL": os.getenv("mongodb+srv://moviewala630:tbBtNRsvcYPYcRU5@cluster0.5ough.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"),
             "SUDO_USERS": json.loads(os.getenv("SUDO_USERS", "[]"))
         }
         with open(CONFIG_FILE, "w") as f:
